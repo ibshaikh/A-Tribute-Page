@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #fff; /* Light text color */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/bg.jpg);
+  background-size: cover; /* Set background image to cover the entire viewport */
+  background-position: center;
+  backface-visibility: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px;
+}
+
+.card {
+  background-color: rgba(30, 30, 30, 0.9); /* Dark card background */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Dark box shadow */
+}
+
+.card img {
+  width: calc(100% - 10px); /* Subtract 10px from the width to accommodate the margins */
+  border-radius: 20px 20px 0 0;
+  margin: 0 5px; /* Set margin of 5px from left and right */
+  background-color: #fff;
+}
+
+.name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.birthdate {
+  text-align: center;
+  font-size: 18px;
+  margin-top: -20px;
+  color: #ccc; /* Light color for age */
+}
+
+.info {
+  padding: 20px;
+}
+
+hr {
+  background-color: red;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: red; /* Align headings in the center */
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.glassmorphism {
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-clip: padding-box;
+}
+
+footer {
+  text-align: center;
+  color: rgb(133, 133, 133);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex; /* Ensure the link and icon are on the same line */
+  align-items: center; /* Align items vertically */
+}
+
+
+.footer-link img {
+  height: 1em; /* Set the height of the image to match the text size */
+  background: transparent;
+  margin-left: 1px;
+  filter: invert(90%);
+}
